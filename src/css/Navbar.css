@@ -1,0 +1,40 @@
+  /* Style for ellipsis icon */
+  .menu-icon {
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+  }
+
+  /* Dropdown styling */
+  .dropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background: #757D92;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    z-index: 1000;
+  }
+  
+  /* Ensure all menu items are visible */
+  .dropdown-menu li {
+    padding: 10px;
+  }
+
+  .dropdown-menu li:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown-menu li a {
+    color: white;
+    text-decoration: none;  /* Removes underline */
+  }
+  
+  .dropdown-menu li a:hover {
+    text-decoration: none;  /* Ensures no underline on hover */
+    color: #ddd;  /* Optional: Lighten text color on hover */
+  }
+  
