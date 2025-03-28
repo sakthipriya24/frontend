@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  justify-content: space-between; /* Ensures title is on left, menu on right */
+  justify-content: space-between; 
   align-items: center;
   background-color: #3a4664;
   padding: 10px 20px;
@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-between; /* Corrects spacing */
+  justify-content: space-between; 
 }
 
 .navbar h3 {
@@ -24,13 +24,12 @@
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
-  margin-left: auto; /* Ensures it stays on the right */
+  margin-left: auto; 
 }
 
-/* Dropdown menu styling */
 .dropdown-menu {
   position: absolute;
-  top: 50px; /* Adjust positioning */
+  top: 30px; 
   right: 10px;
   background: #757D92;
   padding: 10px;
@@ -49,4 +48,65 @@
 
 .dropdown-menu li a:hover {
   text-decoration: none;
+  color: black;
+}
+
+.dropdown-menu li:hover {
+  background: white;
+}
+
+.container {
+  text-align: center;
+  margin: 50px auto;
+  width: 80%;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 30px 0;
+  position: relative;
+  color: #3a4664;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #3a4664;
+  margin: 0 10px;
+}
+
+.product-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  width: 200px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.card p {
+  margin: 5px 0;
 }
